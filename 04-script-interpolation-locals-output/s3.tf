@@ -16,4 +16,6 @@ resource "aws_s3_bucket_object" "this" {
 
   etag = filemd5(local.sample_file_path)
 
+  content_type = "application/json"
+
 }
