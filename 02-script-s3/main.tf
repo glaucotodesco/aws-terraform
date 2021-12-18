@@ -18,8 +18,10 @@ resource "aws_s3_bucket" "my-test-bucket" {
   acl    = "private"
 
   tags = {
-    Name        = "My bucket"
+    Name        = "My bucket test"
     Environment = "Dev"
     ManagedBy   = "Terraform"
+    Update      = "2021-12-18"
+    UpdateBy    = "Glauco Todesco"
   }
 }
